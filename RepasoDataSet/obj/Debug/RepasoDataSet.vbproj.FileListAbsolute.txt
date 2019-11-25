@@ -10,3 +10,4 @@ C:\Users\andermaestre\Desktop\git\RepasoDataSet\RepasoDataSet\obj\Debug\RepasoDa
 C:\Users\andermaestre\Desktop\git\RepasoDataSet\RepasoDataSet\obj\Debug\RepasoDataSet.exe
 C:\Users\andermaestre\Desktop\git\RepasoDataSet\RepasoDataSet\obj\Debug\RepasoDataSet.xml
 C:\Users\andermaestre\Desktop\git\RepasoDataSet\RepasoDataSet\obj\Debug\RepasoDataSet.pdb
+C:\Users\andermaestre\Desktop\git\RepasoDataSet\RepasoDataSet\obj\Debug\RepasoDataSet.Form2.resources

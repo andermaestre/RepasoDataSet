@@ -5,9 +5,10 @@
         If resp = MsgBoxResult.Yes Then
             Dim tabla As DataTable = ds.Tables("Pedidos")
             Dim nuevoPedido As DataRow
+            Dim nuevoId = BuscarMax()
             nuevoPedido = tabla.NewRow
             nuevoPedido.BeginEdit()
-            nuevoPedido("IdPedido") = BuscarMax()
+            nuevoPedido("IdPedido") = nuevoId
             nuevoPedido("Fecha") = Date.Today
             nuevoPedido("Cerrado") = 0
             nuevoPedido("TotalNeto") = 0
@@ -15,6 +16,9 @@
             nuevoPedido("TotalPagar") = 0
             nuevoPedido.EndEdit()
             tabla.Rows.Add(nuevoPedido)
+            pedidoActual = nuevoId
+            Dim f As Form2 = New Form2()
+            f.Show()
 
         End If
     End Sub
@@ -67,8 +71,6 @@
     End Sub
 
     Private Function BuscarMax() As Integer
-
-
         Dim tabla As DataTable = ds.Tables("Pedidos")
         Dim rows() As DataRow = tabla.Select("MAX(IdPedido)")
         If rows.Length = 0 Then

@@ -1,6 +1,9 @@
 ﻿Imports System.Data.SqlClient
 
 Module Module1
+
+    Public pedidoActual As Integer
+
     Public cadena As String = "Data Source=SEGUNDO150;Initial Catalog=DAM_Andermaestre_DEV;Integrated Security=True"
 
     Public daPedidos As New SqlDataAdapter("Select * From RepasoDataSet.Pedidos", cadena)
