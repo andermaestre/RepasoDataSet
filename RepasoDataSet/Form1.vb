@@ -3,6 +3,18 @@
         Dim resp As MsgBoxResult = MsgBox("Kierres hunho nuébo?", vbYesNo)
 
         If resp = MsgBoxResult.Yes Then
+            Dim tabla As DataTable = ds.Tables("Pedidos")
+            Dim nuevoPedido As DataRow
+            nuevoPedido = tabla.NewRow
+            nuevoPedido.BeginEdit()
+            nuevoPedido("IdPedido") = BuscarMax()
+            nuevoPedido("Fecha") = Date.Today
+            nuevoPedido("Cerrado") = 0
+            nuevoPedido("TotalNeto") = 0
+            nuevoPedido("TotalIva") = 0
+            nuevoPedido("TotalPagar") = 0
+            nuevoPedido.EndEdit()
+            tabla.Rows.Add(nuevoPedido)
 
         End If
     End Sub
@@ -26,7 +38,46 @@
         key(0) = tab.Columns("IdDetalle")
         tab.PrimaryKey = key
 
+        Dim colx, coly As DataColumn
 
+        colx = ds.Tables("Pedidos").Columns("IdPedido")
+        coly = ds.Tables("LineasDetalle").Columns("IdPedido")
+
+        Dim reldetped As DataRelation = New DataRelation("DetallesPedidos", colx, coly)
+
+        ds.Relations.Add(reldetped)
+
+        colx = ds.Tables("Productos").Columns("IdProducto")
+        coly = ds.Tables("LineasDetalle").Columns("IdProducto")
+
+        Dim reldetprod As DataRelation = New DataRelation("DetallesProductos", colx, coly)
+
+        ds.Relations.Add(reldetprod)
+
+        Dim consFK As ForeignKeyConstraint = ds.Tables("LineasDetalle").Constraints("DetallesPedidos")
+        consFK.DeleteRule = Rule.None
+        consFK.UpdateRule = Rule.None
+        ds.EnforceConstraints = True
+
+        consFK = ds.Tables("LineasDetalle").Constraints("DetallesProductos")
+        consFK.DeleteRule = Rule.None
+        consFK.UpdateRule = Rule.None
+        ds.EnforceConstraints = True
 
     End Sub
+
+    Private Function BuscarMax() As Integer
+
+
+        Dim tabla As DataTable = ds.Tables("Pedidos")
+        Dim rows() As DataRow = tabla.Select("MAX(IdPedido)")
+        If rows.Length = 0 Then
+            Return 1
+        Else
+            Dim numero As Object = rows(0).Item("IdPedido")
+            Return numero + 1
+        End If
+    End Function
+
+
 End Class
