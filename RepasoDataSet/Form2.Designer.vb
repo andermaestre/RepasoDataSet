@@ -26,26 +26,26 @@ Partial Class Form2
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.txtUnidades = New System.Windows.Forms.TextBox()
+        Me.txtTotalLinea = New System.Windows.Forms.TextBox()
+        Me.txtPrecio = New System.Windows.Forms.TextBox()
+        Me.btnAgregar = New System.Windows.Forms.Button()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.btnAgregar = New System.Windows.Forms.Button()
         Me.btnCerrar = New System.Windows.Forms.Button()
         Me.txtIdPedido = New System.Windows.Forms.TextBox()
         Me.txtFecha = New System.Windows.Forms.TextBox()
-        Me.txtPrecio = New System.Windows.Forms.TextBox()
-        Me.txtTotalLinea = New System.Windows.Forms.TextBox()
         Me.txtPrecioSuma = New System.Windows.Forms.TextBox()
         Me.txtUnidadesSuma = New System.Windows.Forms.TextBox()
         Me.txtTotalLineaSuma = New System.Windows.Forms.TextBox()
         Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.txtUnidades = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -92,6 +92,84 @@ Partial Class Form2
         Me.Panel1.Size = New System.Drawing.Size(525, 97)
         Me.Panel1.TabIndex = 2
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(7, 45)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(100, 21)
+        Me.ComboBox1.TabIndex = 11
+        '
+        'txtUnidades
+        '
+        Me.txtUnidades.Location = New System.Drawing.Point(219, 45)
+        Me.txtUnidades.Name = "txtUnidades"
+        Me.txtUnidades.Size = New System.Drawing.Size(100, 20)
+        Me.txtUnidades.TabIndex = 10
+        '
+        'txtTotalLinea
+        '
+        Me.txtTotalLinea.Location = New System.Drawing.Point(330, 45)
+        Me.txtTotalLinea.Name = "txtTotalLinea"
+        Me.txtTotalLinea.Size = New System.Drawing.Size(100, 20)
+        Me.txtTotalLinea.TabIndex = 9
+        '
+        'txtPrecio
+        '
+        Me.txtPrecio.Location = New System.Drawing.Point(113, 45)
+        Me.txtPrecio.Name = "txtPrecio"
+        Me.txtPrecio.Size = New System.Drawing.Size(100, 20)
+        Me.txtPrecio.TabIndex = 7
+        '
+        'btnAgregar
+        '
+        Me.btnAgregar.Location = New System.Drawing.Point(442, 43)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(75, 23)
+        Me.btnAgregar.TabIndex = 5
+        Me.btnAgregar.Text = "Agregar"
+        Me.btnAgregar.UseVisualStyleBackColor = True
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.ForeColor = System.Drawing.Color.White
+        Me.Label10.Location = New System.Drawing.Point(327, 29)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(60, 13)
+        Me.Label10.TabIndex = 4
+        Me.Label10.Text = "Total Linea"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.ForeColor = System.Drawing.Color.White
+        Me.Label9.Location = New System.Drawing.Point(216, 29)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(52, 13)
+        Me.Label9.TabIndex = 3
+        Me.Label9.Text = "Unidades"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(110, 29)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(37, 13)
+        Me.Label8.TabIndex = 2
+        Me.Label8.Text = "Precio"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(4, 28)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(50, 13)
+        Me.Label7.TabIndex = 1
+        Me.Label7.Text = "Producto"
+        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -135,55 +213,6 @@ Partial Class Form2
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Total Linea"
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(4, 28)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(50, 13)
-        Me.Label7.TabIndex = 1
-        Me.Label7.Text = "Producto"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(110, 29)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(37, 13)
-        Me.Label8.TabIndex = 2
-        Me.Label8.Text = "Precio"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(216, 29)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(52, 13)
-        Me.Label9.TabIndex = 3
-        Me.Label9.Text = "Unidades"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(327, 29)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(60, 13)
-        Me.Label10.TabIndex = 4
-        Me.Label10.Text = "Total Linea"
-        '
-        'btnAgregar
-        '
-        Me.btnAgregar.Location = New System.Drawing.Point(442, 43)
-        Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(75, 23)
-        Me.btnAgregar.TabIndex = 5
-        Me.btnAgregar.Text = "Agregar"
-        Me.btnAgregar.UseVisualStyleBackColor = True
-        '
         'btnCerrar
         '
         Me.btnCerrar.Location = New System.Drawing.Point(461, 427)
@@ -206,20 +235,6 @@ Partial Class Form2
         Me.txtFecha.Name = "txtFecha"
         Me.txtFecha.Size = New System.Drawing.Size(100, 20)
         Me.txtFecha.TabIndex = 8
-        '
-        'txtPrecio
-        '
-        Me.txtPrecio.Location = New System.Drawing.Point(113, 45)
-        Me.txtPrecio.Name = "txtPrecio"
-        Me.txtPrecio.Size = New System.Drawing.Size(100, 20)
-        Me.txtPrecio.TabIndex = 7
-        '
-        'txtTotalLinea
-        '
-        Me.txtTotalLinea.Location = New System.Drawing.Point(330, 45)
-        Me.txtTotalLinea.Name = "txtTotalLinea"
-        Me.txtTotalLinea.Size = New System.Drawing.Size(100, 20)
-        Me.txtTotalLinea.TabIndex = 9
         '
         'txtPrecioSuma
         '
@@ -250,21 +265,6 @@ Partial Class Form2
         Me.ListView1.Size = New System.Drawing.Size(525, 208)
         Me.ListView1.TabIndex = 12
         Me.ListView1.UseCompatibleStateImageBehavior = False
-        '
-        'txtUnidades
-        '
-        Me.txtUnidades.Location = New System.Drawing.Point(219, 45)
-        Me.txtUnidades.Name = "txtUnidades"
-        Me.txtUnidades.Size = New System.Drawing.Size(100, 20)
-        Me.txtUnidades.TabIndex = 10
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(7, 45)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(100, 21)
-        Me.ComboBox1.TabIndex = 11
         '
         'Form2
         '

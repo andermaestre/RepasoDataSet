@@ -11,3 +11,16 @@ C:\Users\andermaestre\Desktop\git\RepasoDataSet\RepasoDataSet\obj\Debug\RepasoDa
 C:\Users\andermaestre\Desktop\git\RepasoDataSet\RepasoDataSet\obj\Debug\RepasoDataSet.xml
 C:\Users\andermaestre\Desktop\git\RepasoDataSet\RepasoDataSet\obj\Debug\RepasoDataSet.pdb
 C:\Users\andermaestre\Desktop\git\RepasoDataSet\RepasoDataSet\obj\Debug\RepasoDataSet.Form2.resources
+C:\Users\andermaestre\source\repos\RepasoDataSet\RepasoDataSet\bin\Debug\RepasoDataSet.exe.config
+C:\Users\andermaestre\source\repos\RepasoDataSet\RepasoDataSet\bin\Debug\RepasoDataSet.exe
+C:\Users\andermaestre\source\repos\RepasoDataSet\RepasoDataSet\bin\Debug\RepasoDataSet.pdb
+C:\Users\andermaestre\source\repos\RepasoDataSet\RepasoDataSet\bin\Debug\RepasoDataSet.xml
+C:\Users\andermaestre\source\repos\RepasoDataSet\RepasoDataSet\obj\Debug\RepasoDataSet.vbprojAssemblyReference.cache
+C:\Users\andermaestre\source\repos\RepasoDataSet\RepasoDataSet\obj\Debug\RepasoDataSet.Form1.resources
+C:\Users\andermaestre\source\repos\RepasoDataSet\RepasoDataSet\obj\Debug\RepasoDataSet.Form2.resources
+C:\Users\andermaestre\source\repos\RepasoDataSet\RepasoDataSet\obj\Debug\RepasoDataSet.Resources.resources
+C:\Users\andermaestre\source\repos\RepasoDataSet\RepasoDataSet\obj\Debug\RepasoDataSet.vbproj.GenerateResource.cache
+C:\Users\andermaestre\source\repos\RepasoDataSet\RepasoDataSet\obj\Debug\RepasoDataSet.vbproj.CoreCompileInputs.cache
+C:\Users\andermaestre\source\repos\RepasoDataSet\RepasoDataSet\obj\Debug\RepasoDataSet.exe
+C:\Users\andermaestre\source\repos\RepasoDataSet\RepasoDataSet\obj\Debug\RepasoDataSet.xml
+C:\Users\andermaestre\source\repos\RepasoDataSet\RepasoDataSet\obj\Debug\RepasoDataSet.pdb
