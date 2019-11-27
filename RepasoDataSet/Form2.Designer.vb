@@ -187,9 +187,9 @@ Partial Class Form2
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(23, 393)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(37, 13)
+        Me.Label4.Size = New System.Drawing.Size(57, 13)
         Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Precio"
+        Me.Label4.Text = "Total Neto"
         '
         'Label5
         '
@@ -198,9 +198,9 @@ Partial Class Form2
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(129, 393)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(52, 13)
+        Me.Label5.Size = New System.Drawing.Size(24, 13)
         Me.Label5.TabIndex = 4
-        Me.Label5.Text = "Unidades"
+        Me.Label5.Text = "IVA"
         '
         'Label6
         '
@@ -209,9 +209,9 @@ Partial Class Form2
         Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(235, 393)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(60, 13)
+        Me.Label6.Size = New System.Drawing.Size(71, 13)
         Me.Label6.TabIndex = 5
-        Me.Label6.Text = "Total Linea"
+        Me.Label6.Text = "Total a Pagar"
         '
         'btnCerrar
         '
